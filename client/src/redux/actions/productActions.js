@@ -21,7 +21,7 @@ export const getProductDetails = (id) => async (dispatch) => {
         dispatch({ type: actionTypes.GET_PRODUCT_DETAILS_SUCCESS, payload: data });
 
     } catch (error) {
-        dispatch({ type: actionTypes.GET_PRODUCT_DETAILS_FAIL, payload: error.response});
+        dispatch({ type: actionTypes.GET_PRODUCT_DETAILS_FAIL, payload: error.message});
 
     }
 };
